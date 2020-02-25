@@ -23,11 +23,12 @@ void settings(){
 }
 
 void setup(){
-   println(width , height);
    loadImages();
    createShapes();
    addTextures();
    hideShapeStroke();
+   textSize(30);
+   textAlign(CENTER);
 }
 
 void createShapes(){
@@ -85,6 +86,7 @@ void draw(){
   pushMatrix();
   rotateZ(radians(mercuryRotation));
   translate(0, -175);
+  text("Mercury", 0, 0, planetSize);
   rotateY(radians(mercuryRotation));
   shape(mercury);
   popMatrix();
@@ -92,6 +94,7 @@ void draw(){
   pushMatrix();
   rotateZ(radians(venusRotation));
   translate(0, -275);
+  text("Venus", 0, 0, planetSize);
   rotateY(radians(venusRotation));
   shape(venus);
   popMatrix();
@@ -99,6 +102,7 @@ void draw(){
   pushMatrix();
   rotateZ(radians(earthRotation));
   translate(0, -375);
+  text("Earth", 0, 0, planetSize);
   rotateY(radians(earthRotation));
   shape(earth);
   rotateZ(radians(moonRotation));
@@ -110,6 +114,7 @@ void draw(){
   pushMatrix();
   rotateZ(radians(marsRotation));
   translate(0, -475);
+  text("Mars", 0, 0, planetSize);
   rotateY(radians(marsRotation));
   shape(mars);
   popMatrix();
@@ -118,6 +123,7 @@ void draw(){
   pushMatrix();
   rotateZ(radians(jupiterRotation));
   translate(0, -575);
+  text("Jupiter", 0, 0, planetSize);
   rotateY(radians(jupiterRotation));
   shape(jupiter);
   popMatrix();
