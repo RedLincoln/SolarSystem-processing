@@ -16,4 +16,4 @@ de la Figura y la forma de trasladarse
 ## Referencias y Librerías utilizadas
 
 Se desarrollo
- utilizando como referencia la página oficial de processing.
+ utilizando como referencia la página oficial de processing. Las textura se obtuvieron de este [link](https://www.solarsystemscope.com/textures/)
